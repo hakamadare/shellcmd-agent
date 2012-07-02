@@ -16,14 +16,15 @@ Install
 
     git clone git://github.com/joemiller/shellcmd-agent.git
 
-- Copy ``shellcmd.rb`` to the mcollective agent directory on all 
-  of your mcollective-managed machines.
+- Copy ``agent/shellcmd.rb`` to the mcollective agent directory on all of your
+  mcollective-managed machines.
 
-- On your client machine, install the ``mc-shellcmd`` control script
+- Copy ``application/shellcmd.rb`` to the mcollective application directory on
+  all of your mcollective client machines.
 
 - Test it::
 
-    mc-shellcmd 'echo i execute therefore i am'
+    mco shellcmd 'echo i execute therefore i am'
 
     ===============================================================
     web01.dom.com exitcode: 0, output:
